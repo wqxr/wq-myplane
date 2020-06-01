@@ -1,0 +1,85 @@
+<van-tabs active="{{ active }}" bind:change="onChange">
+  <van-tab title="737-NG">
+    <view style='display:flex' wx:for="{{matainInfo[0].list}}" wx:for-index="index" wx:for-item="childItem" wx:key="index">
+      <view style='width:23%'>
+        <view bindtap="onClick" data-key="{{index}}" class=" application-card {{detail==index+1?'active1':''}}">
+          {{childItem.titlelist}}
+          <van-icon name="arrow" wx:if="{{detail!==index+1}}" />
+        </view>
+      </view>
+      <view class='content-style' wx:if="{{detail==index+1}}">
+        <view>
+          <view class='font-style'> {{childItem.title}}</view>
+        </view>
+        <view wx:for="{{childItem.text}}" wx:key="key" wx:for-item="text" class='text-style'>
+          <view style='padding-left: 20px;'>{{text.fileName}}</view>
+          <view style='text-align: right;color:#ccc'>271KB</view>
+        </view>
+         <view  class='info-style'> {{childItem.info}}</view>
+      </view>
+    </view>
+  </van-tab>
+  <van-tab title="737MAX">
+    <view style='display:flex' wx:for="{{matainInfo[0].list}}" wx:for-index="index" wx:for-item="childItem" wx:key="index">
+      <view style='width:23%'>
+        <view bindtap="onClick" data-key="{{index}}" class=" application-card {{detail==index+1?'active1':''}}">
+          {{childItem.titlelist}}
+          <van-icon name="arrow" wx:if="{{detail!==index+1}}" />
+        </view>
+      </view>
+      <view class='content-style' wx:if="{{detail==index+1}}">
+        <view>
+          <view class='font-style'> {{childItem.title}}</view>
+        </view>
+        <view wx:for="{{childItem.text}}" wx:key="key" wx:for-item="text" class='text-style'>
+          <view style='padding-left: 20px;'>{{text.fileName}}</view>
+          <view style='text-align: right;color:#ccc'>271KB</view>
+        </view>
+        <view class='info-style'> {{childItem.info}}</view>
+        <view>
+
+        </view>
+      </view>
+    </view>
+  </van-tab>
+  <van-tab title="A320">
+    <view style='display:flex' wx:for="{{matainInfo[0].list}}" wx:for-index="index" wx:for-item="childItem" wx:key="index">
+      <view style='width:23%'>
+        <view bindtap="onClick" data-key="{{index}}" class=" application-card {{detail==index+1?'active1':''}}">
+          {{childItem.titlelist}}
+          <van-icon name="arrow" wx:if="{{detail!==index+1}}" />
+        </view>
+      </view>
+      <view class='content-style' wx:if="{{detail==index+1}}">
+        <view>
+          <view class='font-style'> {{childItem.title}}</view>
+        </view>
+        <view wx:for="{{childItem.text}}" wx:key="key" wx:for-item="text" class='text-style'>
+          <view style='padding-left: 20px;'>{{text.fileName}}</view>
+          <view style='text-align: right;color:#ccc'>271KB</view>
+        </view>
+         <view class='info-style'> {{childItem.info}}</view>
+      </view>
+    </view>
+  </van-tab>
+  <van-tab title="320Neo">
+    <view style='display:flex' wx:for="{{matainInfo[0].list}}" wx:for-index="index" wx:for-item="childItem" wx:key="index">
+      <view style='width:23%'>
+        <view bindtap="onClick" data-key="{{index}}" class=" application-card {{detail==index+1?'active1':''}}">
+          {{childItem.titlelist}}
+          <van-icon name="arrow" wx:if="{{detail!==index+1}}" />
+        </view>
+      </view>
+      <view class='content-style' wx:if="{{detail==index+1}}">
+        <view>
+          <view class='font-style'> {{childItem.title}}</view>
+        </view>
+        <view wx:for="{{childItem.text}}" wx:key="key" wx:for-item="text" class='text-style'>
+          <view style='padding-left: 20px;'>{{text.fileName}}</view>
+          <view style='text-align: right;color:#ccc'>271KB</view>
+        </view>
+         <view class='info-style'> {{childItem.info}}</view>
+      </view>
+    </view>
+  </van-tab>
+</van-tabs>

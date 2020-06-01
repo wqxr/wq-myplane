@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/matain/index"
+  ],
+
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./assets/img/camera.png",
+        "selectedIconPath": "/assets/img/camera_selected.png"
+      },
+      {
+        "pagePath": "pages/matain/index",
+        "text": "维修提示",
+        "iconPath":"./assets/img/camera.png",
+        "selectedIconPath":"/assets/img/camera_selected.png"
+
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "MEL",
+        "iconPath":"./assets/img/report.png",
+        "selectedIconPath":"/assets/img/report_selected.png"
+
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "工具手册",
+        "iconPath":"./assets/img/me.png",
+        "selectedIconPath":"/assets/img/me_selected.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "维修宝典",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "van-search": "/miniprogram_npm/@vant/weapp/search/index",
+    "van-index-bar": "/miniprogram_npm/@vant/weapp/index-bar/index",
+    "van-index-anchor": "/miniprogram_npm/@vant/weapp/index-anchor/index",
+    "van-sidebar": "/miniprogram_npm/@vant/weapp/sidebar/index",
+    "van-sidebar-item": "/miniprogram_npm/@vant/weapp/sidebar-item/index",
+    "van-tab": "/miniprogram_npm/@vant/weapp/tab/index",
+    "van-tabs": "/miniprogram_npm/@vant/weapp/tabs/index",
+    "van-icon": "/miniprogram_npm/@vant/weapp/icon/index"
+    
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+
+}

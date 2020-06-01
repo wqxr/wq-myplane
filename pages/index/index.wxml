@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view>
+  <van-search value="{{ value }}" placeholder="请输入搜索关键词" />
+</view>
+<view class="container">
+  <view class='carousel'>
+  </view>
+  <view class="part-img-box">
+    <image src="/assets/img/timg.jpg" />
+  </view>
+
+</view>

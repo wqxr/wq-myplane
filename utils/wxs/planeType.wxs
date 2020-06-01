@@ -1,0 +1,8 @@
+function cgAnpai(str) {
+  if (!str || str.length == 0) {
+    return '';
+  }
+  return str.replace('A', '车票预订').replace('B', '机票预订').replace('C', '已购票').replace('D', '自驾');
+}
+
+module.exports.cgAnpai = cgAnpai;
